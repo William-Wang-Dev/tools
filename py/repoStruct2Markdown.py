@@ -140,7 +140,7 @@ def generate_repo_structure_to_markdown(
         for filename, (anchor_id, file_path, rel_path) in file_contents.items():
             language = determine_file_language(file_path)
             assert language is not None, f"File in here should be valid Language extension: {file_path}"
-            print(f'''file path is {file_path}''')
+            
             # Create an anchor ID for the file
             # anchor_id = create_anchor_id(str(rel_path))
             # Use the anchor ID as the heading instead of just the relative path
